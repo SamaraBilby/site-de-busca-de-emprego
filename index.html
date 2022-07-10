@@ -23,12 +23,83 @@
                         <a class="nav-link" href="index.html">Ver Vagas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary" href="add.html">Abri Vaga</a>
+                        <a class="nav-link btn btn-primary" href="add.html">Abrir Vaga</a>
                     </li>
                 </ul>
             </div>
+
         </nav>
     </header>
+
+    <div id="top-container" class="container-fluid">
+        <h1 id="main-title" class="text-center">Encontre o emprego que combina com você!</h1>
+        <p id="main-subtitle" class="text-center">Somos diversificados</p>
+
+        <form id="search-form" class="form-inline" action="">
+
+            <div class="form-group cold-md-10">
+                <input type="text" class="form-control" id="job" name="job" placeholder="Digite a vaga que está buscando">
+            </div>
+
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">Procurar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <main>
+
+        <div id="jobs-container" class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="jobs-list-title">Vagas em destaque</h2>
+                   
+                    <ul id="job-list" class="list-group">
+
+                        <li class="list-group-item new-job">
+                            <img src="./public/image/company.svg" alt="nome da empresa">
+                            <p>Empresa</p>
+                            <h2>Título da vaga</h2>
+                            <p>R$ 5000,00</p>
+                            <span class=new-job-label"">Nova</span>
+                            <a class="btn btn-primary">Ver Vaga</a>
+                        </li>
+
+                        <li class="list-group-item new-job">
+                            <img src="./public/image/company.svg" alt="nome da empresa">
+                            <p>Empresa</p>
+                            <h2>Título da vaga</h2>
+                            <p>R$ 5000,00</p>
+                            <span class="new-job-label">Nova</span>
+                            <a class="btn btn-primary">Ver Vaga</a>
+                        </li>
+
+                        <li class="list-group-item">
+                            <img src="./public/image/company.svg" alt="nome da empresa">
+                            <p>Empresa</p>
+                            <h2>Título da vaga</h2>
+                            <p>R$ 5000,00</p>
+                            
+                            <a class="btn btn-primary">Ver Vaga</a>
+                        </li>
+
+                        <li class="list-group-item new-job">
+                            <img src="./public/image/company.svg" alt="nome da empresa">
+                            <p>Empresa</p>
+                            <h2>Título da vaga</h2>
+                            <p>R$ 5000,00</p>
+                            <span class="new-job-label">Nova</span>
+                            <a class="btn btn-primary">Ver Vaga</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

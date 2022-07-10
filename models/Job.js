@@ -20,7 +20,7 @@ const Job = db.define('job',{
     },
     novo: {
         type: Sequelize.INTEGER,
-    }    
+    }  
 });
 
 module.exports = Job

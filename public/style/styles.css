@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+/* nav */
+
+.navbar{
+    background-color: #CCCC;
+    padding: 1rem;
+    border-bottom: 1px solid #CCC;
+}
+
+.navbar a, .navbar .nav-item a {
+    color: #212529;
+    
+}
+.navbar a:hover{
+    color: #F03E3E;
+}
+.nav-item{
+    margin: 0 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.navbar .nav-item .btn{
+    color: #FFFF;
+   background-color: #F03E3E;
+   border: 1px solid transparent; 
+   border-radius: 7%;
+}
+
+/*banner*/
+
+#top-container {
+    color: #CCC;
+    padding: 6.875rem;
+    background-color: #f7f9fc;
+    border-bottom: 1px solid #DDE0F4;
+    margin-bottom: 1.875rem;
+    background-image: url('../image/banner2.jpg');
+    background-position: 0 6.25rem;
+    background-size: cover;
+}
+
+#main-title{
+    padding: 1.875rem 0;
+    font-size: 3rem;
+}
+
+#main-subtitle{
+    padding-bottom: 5rem;
+    font-size: 1.2rem;
+}
+
+/*form*/
+#search-form {
+    padding: 1.875rem 6.25rem;
+}
+
+#search-form .col-md-10, #search-form .col-md-2{
+    padding: 0;
+}
+
+#search-form input, #search-form button {
+    width: 100%;
+    height: 3.125rem;
+    font-size: 1.125rem;
+}
+
+#search-form button{
+    color: #FFFF;
+    background-color: #F03E3E;
+    border: 1px solid transparent;
+}
+
+.navbar .nav-item .btn:hover, #search-form button:hover, .list-group-item a:hover {
+    background-color: #FFFF;
+    color: #F03E3E;
+    border-color: #F03E3E;
+}
+#search-form input:focus{
+    border: 2px solid #F03E3E;
+}
+
+/*lista*/
+
+#job-list .list-group-item {
+    margin-bottom: 0.5rem;
+    border: 1px solid #CCC;
+    padding: 0.9375rem 5rem;
+    color: #212529;
+    height: 7.5rem;
+}
+
+#job-list .list-group-item p{
+    font-size: 0.875rem;
+    margin-bottom: 0.3125rem;
+}
+
+#job-list .list-group-item.new-job{
+   border: none;
+   background-color: #fff7cc;
+}
+
+#job-list-title {
+    margin-bottom: 2.1875rem;
+}
+
+.list-group-item img{
+    width: 5rem;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    background-color: #CCC;
+    position: absolute;
+    left: -2.5rem;
+    top: calc(50% - 2.5rem);
+}
+
+.list-group-item a {
+    position: absolute;
+    right: 1.25rem;
+    top: 2.1875rem;
+    height: 3.125rem;
+    line-height: 2.1875rem;
+    background-color: #F03E3E;
+    border: 1px solid transparent;
+    color: #FFFF;
+}
+
+.new-job-label {
+    background-color: #FFD500;
+    color: #4d5154;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.3125rem 0.625rem;
+    border-radius: 10px;
+    position: absolute;
+    right: 9rem;
+    top: 2.5rem;
+    display: none;
+}
+
+.new-job .new-job-label{
+    display: block;
+}
+
+
+
+
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./public/style/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <title>Emprego ideal - Cadastro de vaga</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-ligth bg-ligth">
+            <a class="navbar-brand" href="index.html">Emprego Ideal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="class navbar-toggle-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ver Vagas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="add.html">Abrir Vaga</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <div id="add-form-container" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Quer compartilhar uma vaga nova?!</h1>
+                <h1 class="text-center">É só preencher o formulário abaixo!</h1>
+            </div>
+            <div id="form-box" class="col-md-12">
+                <h2>Preencha os campos o mais detalhado possível, pois assim é mais rápido de encontrar seu candidato ideal!!</h2>
+                <form action="">
+                    <div class="form-group">
+                        <label for="title">Título da Vaga:</label>
+                        <input type="text" class="form-control" id="title" name="title" placeholder="Digite o título da vaga" required>
+                        <small id="titleHelp" class="form-text text-muted">Campo obrigatório, seja claro e objetivo ao preencher o título da vaga.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao">Descrição da Vaga:</label>
+                        <textarea type="text" class="form-control" id="descricao" name="descricao" placeholder="Descreva as atividades do candidato" required></textarea>
+                        <small id="titleHelp" class="form-text text-muted">Campo obrigatório, para vaga de desenvolvedores importante detalhar as tecnologias necessárias para a vaga</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="empresa">Nome da empresa contratante:</label>
+                        <input type="text" class="form-control" id="empresa" name="empresa" placeholder="Digite o nome da empresa" required>
+                        <small id="titleHelp" class="form-text text-muted">Campo obrigatório, informar o nome da empresa.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail para contato:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite o e-mail para o candidato enviar o currículo" required>
+                        <small id="titleHelp" class="form-text text-muted">Campo obrigatório.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="salario">Informe o salário oferecido:</label>
+                        <input type="text" class="form-control" id="salario" placeholder="Digite o salário da vaga">
+                        <small id="titleHelp" class="form-text text-muted">Campo obrigatório.</small>
+                    </div>
+                    <input type="hidden" name="novo" value="1">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</body>
+</html>

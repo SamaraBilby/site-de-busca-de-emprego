@@ -72,13 +72,13 @@
     font-size: 1.125rem;
 }
 
-#search-form button{
+#search-form button, #form-box button{
     color: #FFFF;
     background-color: #F03E3E;
     border: 1px solid transparent;
 }
 
-.navbar .nav-item .btn:hover, #search-form button:hover, .list-group-item a:hover {
+.navbar .nav-item .btn:hover, #search-form button:hover, .list-group-item a:hover, #form-box button:hover {
     background-color: #FFFF;
     color: #F03E3E;
     border-color: #F03E3E;
@@ -148,6 +148,53 @@
 .new-job .new-job-label{
     display: block;
 }
+
+/* página de cadastro add.html*/
+#add-form-container{
+    margin-top: 6.25rem;
+    
+}
+#add-form-container h3.text-center{
+    margin-bottom: 2rem;
+}
+#add-form-container h4{
+    margin: 1.5rem 0;
+    color: #F03E3E;
+    font-size: 1.2rem;
+}
+
+#form-box {
+    padding: 0.05rem 3.125rem;
+   box-shadow: 0 0.0625rem 0.3125rem rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   background-color: rgba(228, 224, 224, 0.555);
+   margin-bottom: 3.125rem;
+}
+
+#add-form-container form label{
+    font-weight: bold;
+}
+
+#add-form-container form input, #add-form-container form textarea{
+    border: 0.125rem solid rgba(228, 224, 224, 0.555) ;
+    background-color: #f8f9fa;
+}
+
+#add-form-container form input:focus, #add-form-container form textarea:focus{
+    border-color: #F03E3E;
+}
+
+#form-box button{
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+    width: 12.5rem;
+    height: 3.125rem;
+    float: right;
+    letter-spacing: 4px;
+}
+
+
+
 
 
 

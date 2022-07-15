@@ -28,6 +28,10 @@ app.set('views', path.join(__dirname, 'views')); // diretório
 app.engine('handlebars', exphbs({defaultLayout:'main'})); // arquivo principal de layout
 app.set('view engine', 'handlebar'); 
 
+//pasta de arquivos estáticos
+
+app.use(express.static(path.join(__dirname, 'public')))
+
 
 // conexão banco de dados
 

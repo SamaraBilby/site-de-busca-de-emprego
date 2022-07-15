@@ -1,7 +1,9 @@
 const express = require('express');
+const exphbs = require('express-handlebars');
 const app = express();
 const db = require('./db/connection');
 const bodyParser = require('body-parser');
+const path = require('path');
 //const router = express.Router();
 
 
@@ -13,11 +15,22 @@ const PORT = 3000;
 app.listen(PORT, function(){
     console.log(`O Express está rodando na porta ${PORT}`)
 })
-// conexão banco de dados
+
 
 //body parser
 
 app.use(bodyParser.urlencoded({ extended: false }));
+
+
+// handleBars
+
+app.set('views', path.join(__dirname, 'views')); // diretório
+app.engine('handlebars', exphbs({defaultLayout:'main'})); // arquivo principal de layout
+app.set('view engine', 'handlebar'); 
+
+
+// conexão banco de dados
+
 db
     .authenticate()
     .then(() => {

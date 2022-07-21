@@ -25,8 +25,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // handleBars
 
 app.set('views', path.join(__dirname, 'views')); // diretório
-app.engine('handlebars', exphbs({defaultLayout:'main'})); // arquivo principal de layout
-app.set('view engine', 'handlebar'); 
+app.engine('handlebars', exphbs.engine({defaultLayout:'main'})); // arquivo principal de layout
+app.set('view engine', 'handlebars'); 
 
 //pasta de arquivos estáticos
 
@@ -45,7 +45,7 @@ db
     });
 // rotas
 app.get('/', (req, res) =>{
-    res.send('Está Funcionando 3');
+    res.render('index');
 });
 
 // jobs rotas
